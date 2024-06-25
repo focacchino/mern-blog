@@ -1,0 +1,215 @@
+@font-face {
+  font-family: "Joyline";
+  src:url(body.otf); /* format("otf");  to tell what the format is */
+  font-weight: normal;
+}
+
+* {
+  font-family: Joyline;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding-left: 200px; /* Adjust based on the width of your sidebar */
+  background-image: url('bg.png');
+  background-repeat: repeat-x repeat-y;
+  background-size: 140px;
+}
+
+.nav-header {
+  background-color: rgb(222, 222, 222);
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1px;
+  width: 200px; /* Set a fixed width for the sidebar */
+  height: 100vh; /* Make the sidebar full height */
+  position: fixed; /* Keep the sidebar in place when scrolling */
+  top: 0; /* Align the sidebar to the top */
+  left: 0; /* Align the sidebar to the left */
+}
+
+.nav-title {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 200px;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#heading {
+  font-size: 25px;
+  font-weight: normal;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+}
+
+#icon {
+  width: 100px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  display: block;
+  border-radius: 20px;
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid rgb(181, 181, 181);
+  border-radius: 20px;
+  padding: 20px;
+  margin-top: 60px;
+  justify-content: center;
+  background-color: whitesmoke;
+  width: 70%;
+  max-width: 150vw;
+  min-width: 30vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+}
+
+.image {
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+}
+
+.post-title {
+  font-size: 35px;
+  font-weight: normal;
+  color: black;
+  text-decoration: none;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.summary {
+  font-size: 20px;
+  font-weight: lighter;
+  color: black;
+  text-decoration: none;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-left: auto;
+}
+
+@media (max-width: 768px) {
+ .post {
+    /* Adjustments for tablets and smaller devices */
+    padding: 15px;
+    margin-top: 30px;
+    max-width: 400px; /* Use a percentage of the viewport width */
+ }
+
+ .image {
+   max-width: 100%; /* Use a percentage of the viewport width */
+ }
+}
+
+@media (max-width: 480px) {
+ .post {
+    /* Adjustments for mobile devices */
+    padding: 10px;
+    margin-top: 20px;
+    max-width: 300px; /* Use a percentage of the viewport width */
+ }
+}
+
+.info {
+  text-align: right;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.nav-link {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  background-color: rgb(158, 158, 158);
+  cursor: pointer;
+  border-radius: 10px;
+  border: 1px solid rgb(158, 158, 158);
+  font-size: medium;
+
+}
+
+.idk {
+  text-decoration: none;
+  color: white;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid rgb(181, 181, 181);
+  border-radius: 20px;
+  padding: 30px;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+  max-width: max-content;
+  margin-bottom: 10px;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: auto;
+}
+
+.input-box {
+  display: flex;
+  border-radius: 15px;
+  font-size: large;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: auto;
+  border: 1px solid rgba(121, 121, 121, 0.735);
+  margin-bottom: 20px;
+  width: 20vw;
+}
+
+.nav-log {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: rgb(158, 158, 158);
+  cursor: pointer;
+  border-radius: 10px;
+  border: 1px solid rgb(158, 158, 158);
+  font-size: larger;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.log-title {
+  text-align: center;
+}
+
+.author {
+  text-align: right;
+}
+
+.new-title {
+  font-size: 35px;
+  font-weight: normal;
+  color: black;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
